@@ -34,7 +34,7 @@ flutter_launcher_name:
   name: "United Communities"
 
 flutter_icons:
-  android: "launcher_icon"
+  android: true
   ios: true
   image_path: "assets/applogo.png"
 
@@ -68,12 +68,25 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-     - family: Montserrat
-       fonts:
-         - asset: assets/Montserrat-Regular.ttf
-         - asset: assets/Montserrat-Italic.ttf
-         - asset: assets/Montserrat-Bold.ttf
-           weight: 800
+    - family: Quicksand
+      fonts:
+          - asset: assets/fonts/Quicksand-Regular.ttf
+          - asset: assets/fonts/Quicksand-Bold.ttf
+            weight: 700
+          - asset: assets/fonts/Quicksand-Light.ttf
+            weight: 100
+    - family: Montserrat
+      fonts:
+          - asset: assets/fonts/Montserrat-Regular.ttf
+          - asset: assets/fonts/Montserrat-Italic.ttf
+          - asset: assets/fonts/Montserrat-Bold.ttf
+            weight: 800
+    - family: SpaceMono
+      fonts:
+          - asset: assets/fonts/SpaceMono-Regular.ttf
+          - asset: assets/fonts/SpaceMono-Italic.ttf
+          - asset: assets/fonts/SpaceMono-Bold.ttf
+            weight: 800
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

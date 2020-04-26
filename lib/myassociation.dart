@@ -14,7 +14,7 @@ class _MyAssociationPageState extends State<MyAssociationPage> {
         centerTitle: true,
         backgroundColor: Colors.orangeAccent,
         leading: IconButton(
-            onPressed: () {}, icon: Icon(Icons.dehaze), color: Colors.white)
+            onPressed: () {},icon: Icon(Icons.dehaze), color: Colors.white)
       ),
       body: ListView(
         shrinkWrap: true,
@@ -143,10 +143,15 @@ class _MyAssociationPageState extends State<MyAssociationPage> {
                       color: Colors.orangeAccent,
                       borderRadius: BorderRadius.only( bottomLeft: Radius.circular(10.0), bottomRight: Radius.circular(10.0)),
                     ),
-                    child: Center(
-                      child: Text('LOGIN',
-                        style: TextStyle(color: Colors.white, fontFamily: 'Quicksand', fontSize: 15.0, fontWeight: FontWeight.bold),
-                      ),
+                    child: GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).pushNamed('/homepage');
+                        },
+                        child: Center(
+                          child: Text('LOGIN',
+                            style: TextStyle(color: Colors.white, fontFamily: 'Quicksand', fontSize: 15.0, fontWeight: FontWeight.bold),
+                          ),
+                        )
                     )
                 )
             )

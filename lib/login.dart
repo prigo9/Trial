@@ -18,21 +18,15 @@ class _LoginPageState extends State<LoginPage> {
                 children: <Widget>[
                   Container(
                     padding: EdgeInsets.fromLTRB(30.0, 110.0, 0.0, 0.0),
-                    child: Text('United',
-                        style: TextStyle(
-                            fontSize: 80.0, fontWeight: FontWeight.w900)),
+                    child: Text('United', style: TextStyle(fontSize: 80.0, fontWeight: FontWeight.w900))
                   ),
                   Container(
                     padding: EdgeInsets.fromLTRB(30.0, 175.0, 0.0, 0.0),
-                    child: Text('Communities',
-                        style: TextStyle(
-                            fontSize: 45.0, fontWeight: FontWeight.bold)),
+                    child: Text('Communities', style: TextStyle(fontSize: 45.0, fontWeight: FontWeight.bold))
                   ),
                   Container(
                     padding: EdgeInsets.fromLTRB(265.0, 175.0, 0.0, 0.0),
-                    child: Text('.',
-                        style: TextStyle(
-                            fontSize: 45.0, fontWeight: FontWeight.bold, color: Colors.orange)),
+                    child: Text('.', style: TextStyle(fontSize: 45.0, fontWeight: FontWeight.bold, color: Colors.orange))
                   )
                 ],
               ),
@@ -125,7 +119,7 @@ class _LoginPageState extends State<LoginPage> {
                     )
                   ],
                 )),
-            SizedBox(height: 15.0),
+            SizedBox(height: 20.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
