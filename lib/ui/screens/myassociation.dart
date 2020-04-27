@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:unitedcommunities/nav_drawer.dart';
+import 'package:unitedcommunities/ui/screens/homepage.dart';
+import 'package:unitedcommunities/ui/widgets/outernavigationdrawer.dart';
+
 class MyAssociationPage extends StatefulWidget {
   @override
   _MyAssociationPageState createState() => new _MyAssociationPageState();
@@ -9,13 +11,13 @@ class _MyAssociationPageState extends State<MyAssociationPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+      drawer: OuterNavigationDrawer(),
       appBar: new AppBar(
         elevation: 0.0,
         centerTitle: true,
         backgroundColor: Colors.orangeAccent,
-        /*leading: IconButton(
-            onPressed: () {},icon: Icon(Icons.dehaze), color: Colors.white) */
-      ),drawer:nav_drawer(),
+      ),
+
       body: ListView(
         shrinkWrap: true,
         children: <Widget>[
@@ -55,11 +57,7 @@ class _MyAssociationPageState extends State<MyAssociationPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Text(
-                    'MY ASSOCIATIONS',
-                    style: TextStyle( color: Colors.grey[600], fontFamily: 'Quicksand',
-                        fontWeight: FontWeight.bold, fontSize: 16.0),
-                  )
+                  Text('MY ASSOCIATIONS', style: TextStyle( color: Colors.grey[600], fontFamily: 'Quicksand', fontWeight: FontWeight.bold, fontSize: 16.0),)
                 ],
               )),
           SizedBox(height: 14.0),
@@ -85,7 +83,9 @@ class _MyAssociationPageState extends State<MyAssociationPage> {
                 borderRadius: BorderRadius.circular(20.0),
                 shadowColor: Colors.orangeAccent, color: Colors.orangeAccent, elevation: 7.0,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+
+                  },
                   child: Center(
                     child: Text(
                       'LOGOUT',

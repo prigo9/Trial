@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:unitedcommunities/ui/widgets/innernavigationdrawer.dart';
+import 'package:unitedcommunities/ui/widgets/outernavigationdrawer.dart';
 
-class HomePage extends StatelessWidget {
+class AppProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      drawer: InnerNavigationDrawer(),
+      backgroundColor: Colors.orange[300],
+      drawer: OuterNavigationDrawer(),
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        iconTheme: IconThemeData(color: Colors.black54),
+        backgroundColor: Colors.orange[300],
+        iconTheme: IconThemeData(color: Colors.black),
         elevation: 0,
         actions: <Widget>[
           IconButton(
@@ -24,11 +24,12 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Text("FEEDS", style: TextStyle( fontFamily: 'Quicksand', fontWeight: FontWeight.bold, fontSize: 18.0, color: Colors.indigo[900]),),
-            SizedBox(height: 18.0,),
-            Container(
-              padding: EdgeInsets.all(25.0),
-
+            Text("PROFILE", style: TextStyle( fontFamily: 'Quicksand', fontWeight: FontWeight.bold, fontSize: 18.0, color: Colors.black),),
+            SizedBox(height: 18.0),
+            Row(
+              children: <Widget>[
+                SizedBox(width: 5.0)
+              ],
             ),
           ],
         ),

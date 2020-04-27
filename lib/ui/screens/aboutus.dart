@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:unitedcommunities/ui/widgets/innernavigationdrawer.dart';
 
-class HomePage extends StatelessWidget {
+class AboutUsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,11 +24,12 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Text("FEEDS", style: TextStyle( fontFamily: 'Quicksand', fontWeight: FontWeight.bold, fontSize: 18.0, color: Colors.indigo[900]),),
-            SizedBox(height: 18.0,),
-            Container(
-              padding: EdgeInsets.all(25.0),
-
+            Text("ABOUT US", style: TextStyle( fontFamily: 'Quicksand', fontWeight: FontWeight.bold, fontSize: 18.0, color: Colors.indigo[900]),),
+            SizedBox(height: 18.0),
+            Row(
+              children: <Widget>[
+                SizedBox(width: 5.0)
+              ],
             ),
           ],
         ),

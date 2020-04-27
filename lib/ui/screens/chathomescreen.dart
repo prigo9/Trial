@@ -1,24 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:unitedcommunities/global.dart';
+import 'package:unitedcommunities/ui/widgets/innernavigationdrawer.dart';
 
 class ChatHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      drawer: InnerNavigationDrawer(),
       appBar: AppBar(
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: Colors.black45),
         elevation: 0,
-        leading: IconButton(
-          padding: EdgeInsets.fromLTRB(8.0, 0.0, 0.0, 0.0),
-          icon: Icon(Icons.menu),
-          onPressed: () {},
-        ),
         actions: <Widget>[
           IconButton(
-            padding: EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
+            padding: EdgeInsets.fromLTRB(0.0, 0.0, 5.0, 0.0),
             icon: Icon(Icons.notifications_none),
             onPressed: () {},
           ),
