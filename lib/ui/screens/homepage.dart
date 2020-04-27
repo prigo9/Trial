@@ -46,6 +46,13 @@ class HomePage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
+                      IconButton(
+                        padding: EdgeInsets.fromLTRB(0.0, 0.0, 8.0, 0.0),
+                        icon: Icon(Icons.chat),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/chathomepage');
+                        },
+                      )
 
                     ],
                   ),
