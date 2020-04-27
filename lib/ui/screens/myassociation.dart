@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:unitedcommunities/nav_drawer.dart';
 class MyAssociationPage extends StatefulWidget {
   @override
   _MyAssociationPageState createState() => new _MyAssociationPageState();
@@ -13,9 +13,9 @@ class _MyAssociationPageState extends State<MyAssociationPage> {
         elevation: 0.0,
         centerTitle: true,
         backgroundColor: Colors.orangeAccent,
-        leading: IconButton(
-            onPressed: () {},icon: Icon(Icons.dehaze), color: Colors.white)
-      ),
+        /*leading: IconButton(
+            onPressed: () {},icon: Icon(Icons.dehaze), color: Colors.white) */
+      ),drawer:nav_drawer(),
       body: ListView(
         shrinkWrap: true,
         children: <Widget>[
